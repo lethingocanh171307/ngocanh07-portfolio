@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bài tập 2: Tìm kiếm và đánh giá thông tin học thuật - Portfolio Kỹ thuật số">
+    <title>Bài tập 2 | Tzz Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">⟨/⟩ Tzz Portfolio</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="index.html">About Me</a></li>
+                <li><a class="nav-link" href="projects.html">My Projects</a></li>
+                <li><a class="nav-link" href="summary.html">Summary</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Dark / Light Mode"
+                title="Dark / Light Mode">🌙</button>
+        </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="page">
+        <div class="container">
+            <div class="detail-header">
+                <a class="detail-back" href="projects.html">← Quay lại My Projects</a>
+                <div class="detail-header-row">
+                    <div class="detail-header-left">
+                        <span class="project-badge bt2">Bài tập 2 · Mục 2.4</span>
+                        <h1 class="detail-title">Khai thác dữ liệu và thông tin</h1>
+                        <p style="color: var(--text-secondary); font-size: 1.05rem; margin-top: 8px;">
+                            Tìm kiếm và đánh giá thông tin học thuật về SDN &amp; Machine Learning IDS
+                        </p>
+                        <div class="detail-meta" style="margin-top: 16px;">
+                            <span class="detail-meta-item">📅 Nhiệm vụ 2</span>
+                            <span class="detail-meta-item">🔍 Information Literacy</span>
+                            <span class="detail-meta-item">⏱️ Bài tập 2 của mục 2.4</span>
+                        </div>
+                    </div>
+                    <div class="detail-header-right">
+                        <a href="25022006_tuan2.pdf" class="detail-pdf-btn" target="_blank">
+                            📄 Tải file PDF bài tập
+                        </a>
+                        <span class="detail-pdf-hint">Bài 2</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objective -->
+            <div class="objective-card animate-on-scroll">
+                <h3>🎯 Mục tiêu bài tập</h3>
+                <p>
+                    Xây dựng quy trình tìm kiếm thông tin học thuật đa lớp bằng toán tử Boolean và các bộ lọc nâng cao
+                    trên các cơ sở dữ liệu uy tín (IEEE Xplore, ACM Digital Library, Google Scholar, arXiv). Sau đó,
+                    tiến hành phân tích, xếp hạng độ tin cậy của 10 tài liệu đã thu thập dựa trên các tiêu chí học thuật
+                    và quy tắc nghiên cứu thực nghiệm.
+                </p>
+            </div>
+
+            <!-- Content: Search Strategies -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">🔍</span> Chiến lược tìm kiếm &amp; Nguồn tài liệu</h2>
+                <p>
+                    Để đảm bảo thu thập được các nghiên cứu chất lượng cao và hạn chế nhiễu thông tin, tôi đã thiết lập
+                    chiến lược tìm kiếm như sau:
+                </p>
+                <ul>
+                    <li><strong>Cơ sở dữ liệu học thuật:</strong> IEEE Xplore, ACM Digital Library, Google Scholar (đối
+                        chiếu trích dẫn), arXiv.org (các bản pre-print mới nhất), và Thư viện ĐHQGHN (luận văn/hội thảo
+                        nội địa như VNICT, FAIR).</li>
+                    <li><strong>Thời gian giới hạn:</strong> Ưu tiên các tài liệu xuất bản từ 2018 đến 2024 để bắt kịp
+                        các mô hình học sâu hiện đại.</li>
+                </ul>
+                <p><strong>Các cú pháp truy vấn nâng cao đã thực thi:</strong></p>
+                <div class="code-block">
+                    1. ("Software-Defined Networking" OR "SDN") AND ("Intrusion Detection" OR "IDS") AND ("Machine
+                    Learning" OR "Deep Learning")<br>
+                    2. site:ieee.org filetype:pdf intitle:"DDoS" AND "SDN Controller"
+                </div>
+            </div>
+
+            <!-- Content: Table of 10 Papers -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">📊</span> Xếp hạng độ tin cậy 10 tài liệu thu thập</h2>
+                <p>
+                    Dưới đây là bảng đánh giá và xếp hạng độ tin cậy khoa học của 10 tài liệu tiêu biểu đã được chọn lọc
+                    kỹ lưỡng:
+                </p>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên tài liệu / Tác giả chính</th>
+                            <th>Nguồn xuất bản</th>
+                            <th>Trích dẫn</th>
+                            <th>Độ tin cậy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>OpenFlow: enabling innovation in campus networks</strong><br><span
+                                    class="table-author">McKeown, N., et al. (2008)</span></td>
+                            <td>ACM SIGCOMM</td>
+                            <td>&gt;15.000</td>
+                            <td><span style="color: var(--accent-emerald); font-weight: 600;">✅ Rất cao</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><strong>Software-defined networking: A comprehensive survey</strong><br><span
+                                    class="table-author">Kreutz, D., et al. (2015)</span></td>
+                            <td>IEEE Proceedings</td>
+                            <td>&gt;6.000</td>
+                            <td><span style="color: var(--accent-emerald); font-weight: 600;">✅ Rất cao</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><strong>Computer Networking: A Top-Down Approach (8th Ed)</strong><br><span
+                                    class="table-author">Kurose, J. F., &amp; Ross, K. W. (2021)</span></td>
+                            <td>Pearson (Sách)</td>
+                            <td>N/A</td>
+                            <td><span style="color: var(--accent-emerald); font-weight: 600;">✅ Rất cao</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><strong>Deep learning approach for network intrusion detection...</strong><br><span
+                                    class="table-author">Tang, T. A., et al. (2018)</span></td>
+                            <td>IEEE Conference</td>
+                            <td>600+</td>
+                            <td><span style="color: var(--accent-cyan); font-weight: 600;">⭐ Cao</span></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><strong>Intrusion Detection Systems in SDN: A Machine Learning...</strong><br><span
+                                    class="table-author">Sultana, N., et al. (2023)</span></td>
+                            <td>IEEE Access</td>
+                            <td>120+</td>
+                            <td><span style="color: var(--accent-cyan); font-weight: 600;">⭐ Cao</span></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><strong>DDoS Attack Detection in SDN using Deep Learning</strong><br><span
+                                    class="table-author">Yan, Q., et al. (2022)</span></td>
+                            <td>Computer Networks (Elsevier)</td>
+                            <td>150+</td>
+                            <td><span style="color: var(--accent-cyan); font-weight: 600;">⭐ Cao</span></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><strong>SDN: Software Defined Networks</strong><br><span class="table-author">Gray, K.,
+                                    &amp; Nadeau, T. D. (2013)</span></td>
+                            <td>O’Reilly Media (Sách)</td>
+                            <td>N/A</td>
+                            <td><span style="color: var(--accent-cyan); font-weight: 600;">⭐ Cao</span></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><strong>Phân loại lưu lượng mạng SDN bằng Random Forest</strong><br><span
+                                    class="table-author">Nguyễn, T. H., &amp; Lê, M. T. (2022)</span></td>
+                            <td>Tạp chí Tin học &amp; ĐK học (VAST)</td>
+                            <td>15+</td>
+                            <td><span style="color: #6366f1; font-weight: 600;">🔷 Khá</span></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><strong>OpenFlow Switch Specification v1.5.1</strong><br><span class="table-author">Open
+                                    Networking Foundation (2015)</span></td>
+                            <td>ONF (Đặc tả kĩ thuật)</td>
+                            <td>N/A</td>
+                            <td><span style="color: #6366f1; font-weight: 600;">🔷 Khá</span></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><strong>Mininet Documentation (Rapid Prototyping for SDN)</strong><br><span
+                                    class="table-author">Mininet Project (Web source)</span></td>
+                            <td>Nguồn Web mở</td>
+                            <td>N/A</td>
+                            <td><span style="color: #f59e0b; font-weight: 600;">⚠️ Trung bình</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Content: In-depth Analysis -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">⚖️</span> Phân tích chuyên sâu tiêu chí đánh giá</h2>
+                <p>
+                    Để xác lập thứ hạng trên, tôi áp dụng thang đánh giá nghiêm ngặt tập trung vào 3 yếu tố cốt lõi:
+                </p>
+                <ol>
+                    <li>
+                        <strong>Tác giả và Nhà xuất bản (Author &amp; Publisher):</strong>
+                        Các bài báo từ nhóm Q1 (như Elsevier Computer Networks) hoặc các hội nghị đỉnh cao (ACM SIGCOMM,
+                        IEEE) được bình duyệt mù đôi (double-blind peer review) đảm bảo độ sai lệch cực kỳ thấp. Sách
+                        giáo khoa của Kurose là giáo trình kinh điển được công nhận toàn cầu.
+                    </li>
+                    <li>
+                        <strong>Phương pháp nghiên cứu thực nghiệm (Research Methodology):</strong>
+                        Các nghiên cứu về Machine Learning (STT 4, 5, 6) có độ tin cậy cao nhờ tuân thủ phương pháp thực
+                        nghiệm chặt chẽ, sử dụng các bộ dữ liệu chuẩn hóa như <em>NSL-KDD</em> hoặc <em>CICIDS2017</em>
+                        và công khai tường tận các công thức tính toán hiệu năng:
+                        <div class="formula-box">
+                            <div class="formula-item">
+                                <span class="formula-label">Precision (Độ chính xác):</span>
+                                <code class="formula-code">Precision = TP / (TP + FP)</code>
+                            </div>
+                            <div class="formula-item">
+                                <span class="formula-label">Recall (Độ thu hồi):</span>
+                                <code class="formula-code">Recall = TP / (TP + FN)</code>
+                            </div>
+                            <div class="formula-item">
+                                <span class="formula-label">F1-Score:</span>
+                                <code
+                                    class="formula-code">F1-Score = 2 * (Precision * Recall) / (Precision + Recall)</code>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Tính cập nhật (Recency):</strong>
+                        Do công nghệ SDN và Deep Learning tiến hóa nhanh, các tài liệu xuất bản sau 2022 được đánh giá
+                        rất cao do giải quyết được các thách thức mới như việc ứng dụng Mạng nơ-ron đồ thị (GNN) hay xử
+                        lý tắc nghẽn bản tin Packet-In trên Controller.
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Content: Lessons Learned -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">💭</span> Bài học rút ra</h2>
+                <p>
+                    Kỹ năng tìm kiếm nâng cao bằng toán tử Boolean giúp lọc sạch rác thông tin, tiết kiệm thời gian
+                    nghiên cứu. Tuy nhiên, kỹ năng quan trọng hơn là đánh giá tính học thuật bằng bộ quy tắc CRAAP và
+                    kiểm chứng phương pháp thực nghiệm. Việc biết cách đọc hiểu các tham số F1-score, Precision và cấu
+                    trúc dữ liệu thử nghiệm giúp tôi nhận định đúng đắn các đóng góp khoa học thực sự của đề tài.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Phan Văn Tuyến · Đại học Công nghệ – ĐHQGHN · Nhập môn Công nghệ số &amp; AI</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

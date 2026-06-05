@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bài tập 3: Viết Prompt hiệu quả cho các tác vụ học tập - Portfolio Kỹ thuật số">
+    <title>Bài tập 3 | Tzz Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">⟨/⟩ Tzz Portfolio</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="index.html">About Me</a></li>
+                <li><a class="nav-link" href="projects.html">My Projects</a></li>
+                <li><a class="nav-link" href="summary.html">Summary</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Dark / Light Mode"
+                title="Dark / Light Mode">🌙</button>
+        </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="page">
+        <div class="container">
+            <div class="detail-header">
+                <a class="detail-back" href="projects.html">← Quay lại My Projects</a>
+                <div class="detail-header-row">
+                    <div class="detail-header-left">
+                        <span class="project-badge bt3">Bài tập 3 · Mục 3.4</span>
+                        <h1 class="detail-title">Tổng quan về trí tuệ nhân tạo</h1>
+                        <p style="color: var(--text-secondary); font-size: 1.05rem; margin-top: 8px;">
+                            Kỹ năng Prompt Engineering trong học tập và nghiên cứu CNTT
+                        </p>
+                        <div class="detail-meta" style="margin-top: 16px;">
+                            <span class="detail-meta-item">📅 Nhiệm vụ 3</span>
+                            <span class="detail-meta-item">🤖 Prompt Engineering</span>
+                            <span class="detail-meta-item">⏱️ Bài tập 2 của mục 3.4</span>
+                        </div>
+                    </div>
+                    <div class="detail-header-right">
+                        <a href="25022006_tuan3.pdf" class="detail-pdf-btn" target="_blank">
+                            📄 Tải file PDF bài tập
+                        </a>
+                        <span class="detail-pdf-hint">Bài 3 </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objective -->
+            <div class="objective-card animate-on-scroll">
+                <h3>🎯 Mục tiêu bài tập</h3>
+                <p>
+                    Đánh giá toàn diện hiệu quả của các Mô hình ngôn ngữ lớn (LLMs) đối với 3 tác vụ học tập cốt lõi của
+                    sinh viên ngành Công nghệ thông tin. Thực hành kỹ năng tối ưu hóa câu lệnh từ Cơ bản (Basic) &rarr;
+                    Cải tiến (Improved) &rarr; Nâng cao (Advanced) và đúc kết khung nguyên tắc C.L.E.A.R.
+                </p>
+            </div>
+
+            <!-- Content: Chosen Tasks -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">📚</span> 3 Tác vụ học tập cốt lõi lựa chọn</h2>
+                <p>
+                    Tôi đã thiết lập thực nghiệm trên 3 tác vụ đại diện cho các phương pháp tiếp thu kiến thức khác
+                    nhau:
+                </p>
+                <ol>
+                    <li><strong>Tác vụ 1: Tóm tắt thuật toán Apriori (Môn Khai thác dữ liệu):</strong> Đọc hiểu mức độ
+                        cao, bóc tách lõi thuật toán mà không bị quá tải bởi các phương trình phức tạp.</li>
+                    <li><strong>Tác vụ 2: Giải thích tính Đa hình (Polymorphism) trong Java OOP:</strong> Tư duy trừu
+                        tượng, nắm bắt bản chất cơ chế hoạt động hơn là cú pháp ngôn ngữ thuần túy.</li>
+                    <li><strong>Tác vụ 3: Tạo bộ câu hỏi ôn tập về Git &amp; GitHub:</strong> Kiểm tra và củng cố kiến
+                        thức thực chiến trước khi làm việc nhóm.</li>
+                </ol>
+            </div>
+
+            <!-- Content: Prompt Evolution -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">⚡</span> Nhật ký tiến hóa của các Prompt</h2>
+                <p>
+                    Dưới đây là chi tiết các phiên bản prompt đã thiết kế cho từng tác vụ:
+                </p>
+
+                <div class="card"
+                    style="margin-bottom: 20px; padding: 20px; border-left: 3px solid var(--accent-cyan);">
+                    <h3 style="color: var(--accent-cyan); margin-top: 0;">Tác vụ 1: Tóm tắt thuật toán Apriori</h3>
+                    <p><strong>Basic:</strong> <em>"Tóm tắt cho tôi về thuật toán Apriori."</em></p>
+                    <p><strong>Improved:</strong> <em>"Hãy tóm tắt nguyên lý hoạt động của thuật toán Apriori trong môn
+                            Khai thác dữ liệu. Trình bày trong 3 đoạn văn, nêu rõ ưu điểm và nhược điểm."</em></p>
+                    <p><strong>Advanced:</strong> <em style="color: var(--text-primary);">"Hãy đóng vai một Giáo sư
+                            chuyên ngành Khoa học Dữ liệu. Hãy tóm tắt thuật toán Apriori cho một sinh viên năm 2 hiểu.
+                            Yêu cầu cấu trúc: 1. Định nghĩa ngắn gọn (dùng phép ẩn dụ cho dễ hiểu). 2. Các bước hoạt
+                            động cốt lõi (sử dụng gạch đầu dòng). 3. Đưa ra 1 ví dụ minh họa thực tế ngắn gọn (Ví dụ:
+                            phân tích giỏ hàng mua Bia và Bỉm). 4. Ưu/Nhược điểm khi xử lý tập dữ liệu khổng lồ (Big
+                            Data)."</em></p>
+                </div>
+
+                <div class="card"
+                    style="margin-bottom: 20px; padding: 20px; border-left: 3px solid var(--accent-purple);">
+                    <h3 style="color: var(--accent-purple); margin-top: 0;">Tác vụ 2: Giải thích tính Đa hình
+                        (Polymorphism) trong Java</h3>
+                    <p><strong>Basic:</strong> <em>"Tính đa hình trong lập trình Java là gì?"</em></p>
+                    <p><strong>Improved:</strong> <em>"Giải thích chi tiết tính Đa hình (Polymorphism) trong Java OOP.
+                            Cung cấp một đoạn code minh họa."</em></p>
+                    <p><strong>Advanced:</strong> <em style="color: var(--text-primary);">"Đóng vai một Senior Java
+                            Developer đang training cho thực tập sinh. Hãy giải thích ’Tính đa hình’ (Polymorphism) từng
+                            bước một: - Bước 1: Giải thích khái niệm bằng ngôn ngữ đời thường. - Bước 2: Phân biệt rõ sự
+                            khác nhau giữa Compile-time polymorphism (Overloading) và Runtime polymorphism (Overriding).
+                            - Bước 3: Viết 1 đoạn code Java minh họa ngắn gọn chứa cả Class cha và Class con để chứng
+                            minh Runtime polymorphism. Nhớ comment giải thích trong code."</em></p>
+                </div>
+
+                <div class="card"
+                    style="margin-bottom: 20px; padding: 20px; border-left: 3px solid var(--accent-emerald);">
+                    <h3 style="color: var(--accent-emerald); margin-top: 0;">Tác vụ 3: Tạo bộ câu hỏi ôn tập Git &amp;
+                        GitHub</h3>
+                    <p><strong>Basic:</strong> <em>"Tạo bài tập về Git."</em></p>
+                    <p><strong>Improved:</strong> <em>"Tạo 5 câu hỏi trắc nghiệm ôn tập về các lệnh cơ bản trong Git và
+                            GitHub. Đưa ra đáp án ở cuối."</em></p>
+                    <p><strong>Advanced:</strong> <em style="color: var(--text-primary);">"Bạn là một Giảng viên Thực
+                            hành môn Lập trình. Hãy tạo một bộ 5 câu hỏi trắc nghiệm ôn tập về Git. Ràng buộc: - Câu hỏi
+                            xoay quanh xử lý tình huống thực tế (Ví dụ: Đang code dở thì cần chuyển nhánh, hoặc lỡ xóa
+                            nhầm file). - 4 đáp án A, B, C, D (chỉ có 1 đáp án đúng). - Trình bày theo định dạng: [Câu
+                            hỏi] &rarr; [Các lựa chọn] &rarr; Đáp án: [X] &rarr; Giải thích chi tiết: [Tại sao X đúng và
+                            các lệnh kia sai]."</em></p>
+                </div>
+            </div>
+
+            <!-- Content: Comparison Table -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">📊</span> Đánh giá và So sánh kết quả đầu ra</h2>
+                <p>
+                    Bảng đối chiếu sự vượt trội của cấu trúc câu lệnh nâng cao đối với chất lượng dữ liệu phản hồi từ
+                    AI:
+                </p>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Tác vụ</th>
+                            <th>Đánh giá Prompt Cơ bản / Cải tiến</th>
+                            <th>Phân tích sự vượt trội của Prompt Nâng cao</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Tóm tắt thuật toán</strong></td>
+                            <td>Trả về văn bản khô khan, chứa đầy rẫy thuật ngữ toán học chuyên sâu như "độ hỗ trợ
+                                (support)", "độ tin cậy (confidence)" mà không giải thích. Văn phong học thuật rập khuôn
+                                giống như chép từ Wikipedia.</td>
+                            <td>Sử dụng Role-prompting ép AI dùng ngôn ngữ sư phạm. Phép ẩn dụ và ví dụ thực tế "Bia -
+                                Bỉm" giúp khái niệm trừu tượng trở nên cực kỳ trực quan, dễ tiếp cận. Cấu trúc rõ ràng
+                                giúp đọc lướt nhanh chóng.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Giải thích OOP</strong></td>
+                            <td>Định nghĩa hàn lâm. Đoạn code minh họa (ở prompt cải tiến) thường quá đơn giản hoặc
+                                không giải thích rõ tại sao lại dùng cơ chế Upcasting hoặc liên kết động (Dynamic
+                                binding).</td>
+                            <td>Kỹ thuật Chain-of-Thought (suy nghĩ theo chuỗi) ép AI phân rã logic: định nghĩa &rarr;
+                                phân loại &rarr; mã nguồn thực tế. Góc nhìn "Senior Developer" tạo ra các comment giải
+                                thích thực chiến cao.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Ôn tập Git</strong></td>
+                            <td>Câu hỏi quá dễ, nặng về học thuộc lòng cú pháp thô (ví dụ: lệnh nào để lưu code? A. git
+                                commit). Không giúp ích nhiều cho việc phát triển tư duy giải quyết vấn đề thực tế.</td>
+                            <td>Ràng buộc (Constraints) về "tình huống thực tế" khiến AI tạo ra các câu hỏi đòi hỏi tư
+                                duy sâu (như xử lý merge conflict hoặc git stash). Phần giải thích hoạt động như một bài
+                                học mini cực kỳ bổ ích.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Content: CLEAR Framework -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">⚙️</span> Khung nguyên tắc viết Prompt hiệu quả (C.L.E.A.R)</h2>
+                <p>
+                    Đúc kết từ bài thực hành, tôi đề xuất bộ khung nguyên tắc giúp tối ưu hóa giao tiếp học thuật với
+                    AI:
+                </p>
+                <ul>
+                    <li><strong>C - Context (Ngữ cảnh):</strong> Cung cấp bối cảnh rõ ràng (Bạn là ai? Đang giải quyết
+                        vấn đề gì? Đối tượng nghe là ai?). Khoanh vùng giúp AI tránh đưa ra thông tin nhiễu.</li>
+                    <li><strong>L - Length &amp; Layout (Độ dài &amp; Bố cục):</strong> Chỉ định rõ dạng thức đầu ra
+                        (Bảng biểu, danh sách gạch đầu dòng, Markdown, giới hạn số từ) để tránh các khối chữ đặc.</li>
+                    <li><strong>E - Examples (Ví dụ minh họa):</strong> Áp dụng Few-shot prompting. Cung cấp 1-2 ví dụ
+                        mẫu để AI hiểu nhanh cấu trúc và định dạng bạn mong muốn.</li>
+                    <li><strong>A - Act As (Đóng vai):</strong> Gán vai trò cụ thể cho AI nhằm định hình giọng điệu
+                        (giọng điệu giảng viên, nhà phát triển phần mềm) và chiều sâu chuyên môn phù hợp.</li>
+                    <li><strong>R - Refine (Tinh chỉnh liên tục):</strong> Xem Prompt Engineering là quá trình lặp. Liên
+                        tục điều chỉnh, sửa lỗi hoặc yêu cầu AI tối ưu thêm các góc nhìn khác (như bộ nhớ, thời gian
+                        chạy).</li>
+                </ul>
+            </div>
+
+            <!-- Content: Lessons Learned -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">💭</span> Bài học rút ra</h2>
+                <p>
+                    Chất lượng phản hồi của AI tỷ lệ thuận với mức độ logic và chi tiết của câu lệnh. Việc rèn luyện
+                    Prompt Engineering không chỉ giúp tôi khai thác tối đa sức mạnh của LLM phục vụ học tập, mà còn giúp
+                    rèn luyện tư duy lập trình - khả năng phân tách một bài toán lớn thành các bước logic và đặt ra các
+                    ràng buộc chặt chẽ cho hệ thống.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Phan Văn Tuyến · Đại học Công nghệ – ĐHQGHN · Nhập môn Công nghệ số &amp; AI</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

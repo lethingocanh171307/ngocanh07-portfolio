@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Danh sách bài tập và dự án cá nhân - Portfolio Kỹ thuật số - Đại học Công nghệ, ĐHQGHN">
+    <title>My Projects | Tzz Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">⟨/⟩ Tzz Portfolio</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="index.html">About Me</a></li>
+                <li><a class="nav-link" href="projects.html">My Projects</a></li>
+                <li><a class="nav-link" href="summary.html">Summary</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Dark / Light Mode"
+                title="Dark / Light Mode">🌙</button>
+        </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="page">
+        <section class="section">
+            <div class="container">
+                <span class="section-label"><span class="dot"></span> Dự án</span>
+                <h2 class="section-title">My <span class="gradient">Projects</span></h2>
+                <p class="section-subtitle">
+                    Tập hợp 6 bài tập thành phần đã hoàn thành trong suốt học kỳ, thể hiện quá trình
+                    học tập và rèn luyện các kỹ năng số.
+                </p>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="card project-card animate-on-scroll stagger-1">
+                        <span class="project-number">01</span>
+                        <span class="project-badge bt1">Bài tập 1</span>
+                        <h3>Máy tính và các thiết bị ngoại vi</h3>
+                        <p class="project-desc">
+                            Thao tác cơ bản với tệp tin và thư mục. Trình bày cấu trúc thư mục tối ưu và quy tắc đặt tên
+                            tệp đã thiết lập, kèm ảnh chụp minh họa.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">File Management</span>
+                            <span class="project-tag">Naming Convention</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary btn-sm" href="bai1.html">Xem chi tiết →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="card project-card animate-on-scroll stagger-2">
+                        <span class="project-number">02</span>
+                        <span class="project-badge bt2">Bài tập 2</span>
+                        <h3>Khai thác dữ liệu và thông tin</h3>
+                        <p class="project-desc">
+                            Tìm kiếm và đánh giá thông tin học thuật bằng các toán tử nâng cao. Phân tích chiến lược tìm
+                            kiếm và đánh giá nguồn tin đa chiều.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Search Operators</span>
+                            <span class="project-tag">Information Evaluation</span>
+                            <span class="project-tag">Academic Research</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary btn-sm" href="bai2.html">Xem chi tiết →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="card project-card animate-on-scroll stagger-3">
+                        <span class="project-number">03</span>
+                        <span class="project-badge bt3">Bài tập 3</span>
+                        <h3>Tổng quan về trí tuệ nhân tạo</h3>
+                        <p class="project-desc">
+                            Viết Prompt hiệu quả cho các tác vụ học tập. Trình bày sự so sánh giữa Prompt ban đầu và
+                            Prompt cải tiến cùng kết quả đầu ra từ AI.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Prompt Engineering</span>
+                            <span class="project-tag">Generative AI</span>
+                            <span class="project-tag">AI Assistant</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary btn-sm" href="bai3.html">Xem chi tiết →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="card project-card animate-on-scroll stagger-4">
+                        <span class="project-number">04</span>
+                        <span class="project-badge bt4">Bài tập 4</span>
+                        <h3>Giao tiếp và hợp tác trong môi trường số</h3>
+                        <p class="project-desc">
+                            Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm. Trình bày minh chứng về việc sử dụng công
+                            cụ quản lý dự án nhóm và cách thức phối hợp trực tuyến.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Collaboration</span>
+                            <span class="project-tag">Project Management</span>
+                            <span class="project-tag">Online Tools</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary btn-sm" href="bai4.html">Xem chi tiết →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="card project-card animate-on-scroll stagger-5">
+                        <span class="project-number">05</span>
+                        <span class="project-badge bt5">Bài tập 5</span>
+                        <h3>Sáng tạo nội dung số</h3>
+                        <p class="project-desc">
+                            Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung. Trưng bày sản phẩm nội dung số hoàn thiện
+                            (hình ảnh, video hoặc bài viết) được hỗ trợ bởi AI.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Content Creation</span>
+                            <span class="project-tag">AI Tools</span>
+                            <span class="project-tag">Multimedia</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary btn-sm" href="bai5.html">Xem chi tiết →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="card project-card animate-on-scroll stagger-6">
+                        <span class="project-number">06</span>
+                        <span class="project-badge bt6">Bài tập 6</span>
+                        <h3>An toàn và liêm chính học thuật</h3>
+                        <p class="project-desc">
+                            Sử dụng AI có trách nhiệm trong học tập và nghiên cứu. Trình bày bộ nguyên tắc cá nhân về sử
+                            dụng AI có trách nhiệm dựa trên các nghiên cứu đã thực hiện.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">AI Ethics</span>
+                            <span class="project-tag">Academic Integrity</span>
+                            <span class="project-tag">Responsible AI</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-primary btn-sm" href="bai6.html">Xem chi tiết →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Phan Văn Tuyến · Đại học Công nghệ – ĐHQGHN · Nhập môn Công nghệ số &amp; AI</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bài tập 6: Sử dụng AI có trách nhiệm trong học tập - Portfolio Kỹ thuật số">
+    <title>Bài tập 6 | Tzz Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">⟨/⟩ Tzz Portfolio</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="index.html">About Me</a></li>
+                <li><a class="nav-link" href="projects.html">My Projects</a></li>
+                <li><a class="nav-link" href="summary.html">Summary</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Dark / Light Mode"
+                title="Dark / Light Mode">🌙</button>
+        </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="page">
+        <div class="container">
+            <div class="detail-header">
+                <a class="detail-back" href="projects.html">← Quay lại My Projects</a>
+                <div class="detail-header-row">
+                    <div class="detail-header-left">
+                        <span class="project-badge bt6">Bài tập 6 · Mục 6.4</span>
+                        <h1 class="detail-title">An toàn và liêm chính học thuật</h1>
+                        <p style="color: var(--text-secondary); font-size: 1.05rem; margin-top: 8px;">
+                            Sử dụng AI có trách nhiệm trong học tập và nghiên cứu khoa học
+                        </p>
+                        <div class="detail-meta" style="margin-top: 16px;">
+                            <span class="detail-meta-item">📅 Nhiệm vụ 6</span>
+                            <span class="detail-meta-item">⚖️ AI Ethics</span>
+                            <span class="detail-meta-item">⏱️ Bài tập 4 của mục 6.4</span>
+                        </div>
+                    </div>
+                    <div class="detail-header-right">
+                        <a href="25022006_tuan6.pdf" class="detail-pdf-btn" target="_blank">
+                            📄 Tải file PDF bài tập
+                        </a>
+                        <span class="detail-pdf-hint">Bài 6 </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objective -->
+            <div class="objective-card animate-on-scroll">
+                <h3>🎯 Mục tiêu bài tập</h3>
+                <p>
+                    Nghiên cứu và phân tích sâu sắc chính sách quản lý AI của ĐHQGHN trong sự đối chiếu so sánh với các
+                    đại học lớn (RMIT, Bách khoa Hà Nội). Thực hiện một nhiệm vụ học thuật thực tế sử dụng trợ lý AI và
+                    thiết lập bộ 6 nguyên tắc ứng xử đạo đức cá nhân khi dùng công nghệ.
+                </p>
+            </div>
+
+            <!-- Content: School Policies -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">🏫</span> So sánh chính sách quản lý AI giữa các trường Đại học</h2>
+                <p>
+                    Mỗi trường đại học xây dựng một định hướng tiếp cận khác nhau để cân bằng giữa cơ hội đổi mới công
+                    nghệ và rủi ro liêm chính học thuật:
+                </p>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Tiêu chí</th>
+                            <th>Đại học Quốc gia Hà Nội (ĐHQGHN)</th>
+                            <th>Đại học RMIT Việt Nam</th>
+                            <th>Đại học Bách khoa Hà Nội</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Cách tiếp cận</strong></td>
+                            <td>Định hướng nguyên tắc đạo đức chung, khuyến khích tự do học thuật kết hợp tự chịu trách
+                                nhiệm.</td>
+                            <td>Chi tiết hóa theo hệ thống phân loại bài tập rõ ràng.</td>
+                            <td>Tập trung vào khâu hậu kiểm chặt chẽ và sử dụng công cụ kiểm soát kỹ thuật.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hệ thống phân loại</strong></td>
+                            <td>Chưa chia mức độ cứng nhắc, đánh giá tổng thể dựa trên năng lực giải trình của sinh
+                                viên.</td>
+                            <td>Áp dụng mô hình 3 vùng (Đỏ - cấm dùng, Vàng - dùng hạn chế, Xanh - dùng tự do) cho từng
+                                môn.</td>
+                            <td>Kiểm soát thông qua các quy chuẩn và đặc tả kỹ thuật của từng bài tập lớn.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Công cụ kiểm soát</strong></td>
+                            <td>Kết hợp hội đồng bảo vệ chuyên môn và phần mềm quét trùng lặp dữ liệu truyền thống.</td>
+                            <td>Sử dụng các module phát hiện AI tích hợp chuyên sâu trực tiếp trên hệ thống Canvas.</td>
+                            <td>Quét trùng lặp thuật toán và đối sánh cấu trúc mã nguồn.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="info-box purple" style="margin-top: 16px;">
+                    <p>
+                        <strong>💡 Nhận định cá nhân:</strong> Chính sách của ĐHQGHN mang tính hiện đại, nhân văn khi
+                        tin tưởng và giao quyền tự chủ cho người học. Tuy nhiên, các công cụ phát hiện văn bản AI (AI
+                        Detectors) hiện nay có tỉ lệ sai số (False Positive) rất lớn. Do đó, việc duy trì cơ chế đánh
+                        giá qua phỏng vấn trực tiếp hoặc thi thực hành tại chỗ là bắt buộc để đo lường thực chất năng
+                        lực sinh viên.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Content: Task Implementation with AI -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">💻</span> Thực thi tác vụ học thuật với trợ lý AI</h2>
+                <p>
+                    <strong>Tác vụ thực tế:</strong> <em>"Phân tích ứng dụng kiến trúc MVC trong thiết kế giao diện ứng
+                        dụng quản lý bằng JavaFX."</em>
+                </p>
+                <ul>
+                    <li>
+                        <strong>Nhật ký tương tác (Prompts &amp; Outputs):</strong>
+                        <ul>
+                            <li><em>Prompt 1 (Khung xương):</em> Đóng vai chuyên gia lập trình Java để lập cấu trúc sườn
+                                báo cáo kỹ thuật 4 chương chuyên sâu.</li>
+                            <li><em>Prompt 2 (So sánh kỹ thuật):</em> So sánh chi tiết JavaFX và Swing về khả năng tối
+                                ưu CSS, Prism engine và FXML layout.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Quy trình đánh giá và Tự chỉnh sửa:</strong>
+                        Tôi phát hiện đầu ra của AI bộc lộ 2 lỗ hổng nghiêm trọng: (1) Thiếu phân tích sâu về xung đột
+                        luồng treo giao diện (UI Freeze trên JavaFX Application Thread) và (2) Code mẫu thô sơ, không sử
+                        dụng lớp <code>Task</code> và <code>Service</code> chuyên dụng của gói
+                        <code>javafx.concurrent</code>.
+                    </li>
+                    <li>
+                        <strong>Đóng góp sáng tạo cá nhân:</strong>
+                        Tôi đã viết lại hoàn toàn phần phân tích luồng, đưa giải pháp lập trình đa luồng
+                        (Multi-threading) thực tế vào để tối ưu hóa việc truy vấn CSDL bất đồng bộ. Thay thế 100% code
+                        mẫu của AI bằng mã nguồn chạy thử nghiệm thực tế do tôi tự biên dịch trên IDE.
+                    </li>
+                </ul>
+                <div class="info-box"
+                    style="border-left-color: var(--accent-cyan); background: rgba(0, 212, 255, 0.04);">
+                    <p><strong>📝 Tuyên bố minh bạch việc sử dụng AI (Citation):</strong></p>
+                    <p style="font-size: 0.9rem; font-style: italic; color: var(--text-secondary);">
+                        "Cấu trúc sườn của báo cáo kỹ thuật và các tiêu chí định tính ban đầu tại Mục 2 được định hình
+                        dựa trên sự hỗ trợ phân tích của mô hình ngôn ngữ lớn Gemini (Phiên bản Advanced) vào ngày
+                        05/06/2026. Sinh viên đã thực hiện kiểm chứng độc lập dữ liệu, tái cấu trúc mã nguồn đồ họa và
+                        chịu trách nhiệm toàn bộ đối với nội dung khoa học hiển thị."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Content: 6 Ethical Principles -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">⚖️</span> Bộ 6 nguyên tắc cá nhân sử dụng AI có trách nhiệm</h2>
+                <p>
+                    Để hướng tới sự phát triển tri thức bền vững, tôi tự thiết lập hệ thống 6 quy tắc ứng xử bất biến:
+                </p>
+                <div class="about-grid" style="margin-top: 20px;">
+                    <div class="card" style="padding: 20px; border-left: 3px solid var(--accent-cyan);">
+                        <h3 style="color: var(--accent-cyan); font-size: 1rem; margin-top: 0;">1. Brain Before Bot (Tư
+                            duy đi trước)</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 6px;">
+                            Luôn tự suy nghĩ và lập dàn ý sơ bộ trước khi mở AI. AI chỉ là công cụ tối ưu hóa, không bao
+                            giờ được phép là nguồn khởi phát tư duy duy nhất.
+                        </p>
+                    </div>
+                    <div class="card" style="padding: 20px; border-left: 3px solid var(--accent-purple);">
+                        <h3 style="color: var(--accent-purple); font-size: 1rem; margin-top: 0;">2. Zero Copy-Paste
+                            (Không sao chép thô)</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 6px;">
+                            Tuyệt đối không sao chép nguyên văn đầu ra của AI vào bài nộp. Mọi tài liệu tham khảo phải
+                            được viết lại bằng chính tư duy và văn phong cá nhân.
+                        </p>
+                    </div>
+                    <div class="card" style="padding: 20px; border-left: 3px solid var(--accent-blue);">
+                        <h3 style="color: var(--accent-blue); font-size: 1rem; margin-top: 0;">3. Fact-check Everything
+                            (Kiểm chứng độc lập)</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 6px;">
+                            Coi mọi dữ liệu, số liệu và mã lệnh do AI cung cấp là giả định cần chứng minh. Bắt buộc đối
+                            chiếu lại giáo trình chính thống hoặc tài liệu được định danh khoa học.
+                        </p>
+                    </div>
+                    <div class="card" style="padding: 20px; border-left: 3px solid var(--accent-emerald);">
+                        <h3 style="color: var(--accent-emerald); font-size: 1rem; margin-top: 0;">4. Absolute
+                            Transparency (Minh bạch nguồn gốc)</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 6px;">
+                            Khai báo trung thực, chi tiết mức độ đóng góp của AI trong bài làm. Xem sự minh bạch là danh
+                            dự học thuật cao nhất của bản thân.
+                        </p>
+                    </div>
+                    <div class="card" style="padding: 20px; border-left: 3px solid #fb923c;">
+                        <h3 style="color: #fb923c; font-size: 1rem; margin-top: 0;">5. Mastery Over Deliverables (Làm
+                            chủ sản phẩm)</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 6px;">
+                            Chỉ nộp những nội dung và dòng code mà bản thân thực sự thấu hiểu bản chất kỹ thuật sâu bên
+                            trong và có năng lực tự tin giải trình trước giảng viên.
+                        </p>
+                    </div>
+                    <div class="card" style="padding: 20px; border-left: 3px solid #ef4444;">
+                        <h3 style="color: #ef4444; font-size: 1rem; margin-top: 0;">6. Data Sovereignty (Bảo mật dữ
+                            liệu)</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 6px;">
+                            Không đăng tải các thông tin cá nhân, mã nguồn bảo mật của nhóm hoặc các kết quả nghiên cứu
+                            mới lên các nền tảng AI mở để tránh nguy cơ rò rỉ dữ liệu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content: Ethical Challenges -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">🔍</span> Phân tích các vấn đề đạo đức hệ thống</h2>
+                <p>
+                    Lạm dụng AI trong môi trường học thuật gây ra những rủi ro liên kết dây chuyền:
+                </p>
+                <ol>
+                    <li>
+                        <strong>Ranh giới mong manh (Hỗ trợ hợp lý vs Gian lận):</strong>
+                        Sự hỗ trợ biến thành gian lận khi sinh viên giao phó hoàn toàn nhiệm vụ nhận thức cho máy, triệt
+                        tiêu mục tiêu tự học và kiểm tra năng lực.
+                    </li>
+                    <li>
+                        <strong>Đạo văn gián tiếp (Plagiarism by Proxy):</strong>
+                        Mô hình AI huấn luyện dựa trên tri thức của hàng triệu tác giả con người nhưng xóa bỏ các vết
+                        tích trích dẫn. Sử dụng nguyên văn AI là đạo văn gián tiếp và vi phạm sở hữu trí tuệ nghiêm
+                        trọng.
+                    </li>
+                    <li>
+                        <strong>Cạm bẫy nhận thức (Cognitive Trap):</strong>
+                        Việc giao phó bài tập cho AI khiến sinh viên nhầm tưởng mình đã hiểu sâu, nhưng thực chất chỉ có
+                        máy hiểu. Lâu dài, điều này làm thui chột khả năng tư duy độc lập và giải quyết các bài toán
+                        phức tạp thực tế.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Phan Văn Tuyến · Đại học Công nghệ – ĐHQGHN · Nhập môn Công nghệ số &amp; AI</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

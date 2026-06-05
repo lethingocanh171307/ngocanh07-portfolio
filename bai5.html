@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bài tập 5: Sáng tạo nội dung số - Portfolio Kỹ thuật số">
+    <title>Bài tập 5 | Tzz Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">⟨/⟩ Tzz Portfolio</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="index.html">About Me</a></li>
+                <li><a class="nav-link" href="projects.html">My Projects</a></li>
+                <li><a class="nav-link" href="summary.html">Summary</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Dark / Light Mode"
+                title="Dark / Light Mode">🌙</button>
+        </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="page">
+        <div class="container">
+            <div class="detail-header">
+                <a class="detail-back" href="projects.html">← Quay lại My Projects</a>
+                <div class="detail-header-row">
+                    <div class="detail-header-left">
+                        <span class="project-badge bt5">Bài tập 5 · Mục 5.4</span>
+                        <h1 class="detail-title">Sáng tạo nội dung số</h1>
+                        <p style="color: var(--text-secondary); font-size: 1.05rem; margin-top: 8px;">
+                            Sử dụng AI tạo sinh hỗ trợ quy trình sáng tạo bài thuyết trình khoa học
+                        </p>
+                        <div class="detail-meta" style="margin-top: 16px;">
+                            <span class="detail-meta-item">📅 Nhiệm vụ 5</span>
+                            <span class="detail-meta-item">🎨 Generative AI</span>
+                            <span class="detail-meta-item">⏱️ Bài tập 2 của mục 5.4</span>
+                        </div>
+                    </div>
+                    <div class="detail-header-right">
+                        <a href="25022006_tuan5.pdf" class="detail-pdf-btn" target="_blank">
+                            📄 Tải file PDF bài tập
+                        </a>
+                        <span class="detail-pdf-hint">Bài 5 </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objective -->
+            <div class="objective-card animate-on-scroll">
+                <h3>🎯 Mục tiêu bài tập</h3>
+                <p>
+                    Ứng dụng phối hợp bộ 3 công cụ AI tạo sinh (Gemini, Midjourney, Canva AI) để xây dựng bài thuyết
+                    trình chuyên nghiệp có chủ đề: <em>"Tác động của Trí tuệ Nhân tạo đến Giáo dục đại học hiện
+                        đại"</em>. Thể hiện tư duy phản biện, kỹ năng đặt lệnh (prompting), chỉnh sửa đồ họa và quản trị
+                    đạo đức trong sáng tạo số.
+                </p>
+            </div>
+
+            <!-- Content: Creative Process -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">⚙️</span> Nhật ký 3 bước sản xuất phối hợp AI</h2>
+                <p>
+                    Quy trình phi tuyến tính biến người học thành một "Đạo diễn" điều phối chất lượng sản phẩm thay vì
+                    làm các tác vụ thủ công lặp lại:
+                </p>
+
+                <div class="info-box"
+                    style="border-left-color: var(--accent-cyan); background: rgba(0, 212, 255, 0.04);">
+                    <p><strong>Bước 1 - Lên ý tưởng &amp; Kịch bản (Gemini - Text AI):</strong></p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 6px;">
+                        Đặt prompt đóng vai chuyên gia công nghệ giáo dục để lập dàn ý 10 slide. Tinh chỉnh prompt lần 2
+                        để tập trung làm sâu phần "Đạo đức học thuật khi dùng AI" (Slide 4, 5) và bổ sung Q&amp;A tương
+                        tác.
+                    </p>
+                    <p style="font-size: 0.9rem; margin-top: 6px;">
+                        <em>Đóng góp cá nhân:</em> Không dùng nguyên văn của AI. Tôi tự viết lại toàn bộ nội dung, lồng
+                        ghép ví dụ thực tế về hệ thống kiểm tra đạo văn LMS tại trường đại học của mình.
+                    </p>
+                </div>
+
+                <div class="info-box"
+                    style="border-left-color: var(--accent-purple); background: rgba(168, 85, 247, 0.04);">
+                    <p><strong>Bước 2 - Tạo tài nguyên đồ họa độc quyền (Midjourney - Image AI):</strong></p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 6px;">
+                        Sử dụng prompt:
+                        <code>/imagine prompt: A futuristic university classroom where a diverse group of students is interacting with a glowing holographic AI interface, cyberpunk style, neon lights, highly detailed, 8k, cinematic lighting --ar 16:9</code>
+                    </p>
+                    <p style="font-size: 0.9rem; margin-top: 6px;">
+                        <em>Đóng góp cá nhân:</em> Upscale bức ảnh số 2 (U2), áp dụng "Vary (Subtle)" để giảm bớt chi
+                        tiết cyberpunk cho lớp học thân thiện hơn. Tiến hành làm mờ nhẹ (blur) các khoảng trống của ảnh
+                        nền để chèn chữ nổi bật.
+                    </p>
+                </div>
+
+                <div class="info-box"
+                    style="border-left-color: var(--accent-emerald); background: rgba(16, 185, 129, 0.04);">
+                    <p><strong>Bước 3 - Dàn trang &amp; Đồng bộ thiết kế (Canva AI - Design AI):</strong></p>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 6px;">
+                        Sử dụng tính năng "Magic Design" của Canva với yêu cầu:
+                        <code>Thiết kế bài thuyết trình công nghệ giáo dục với tông màu xanh dương đậm và trắng, phong cách hiện đại.</code>
+                    </p>
+                    <p style="font-size: 0.9rem; margin-top: 6px;">
+                        <em>Đóng góp cá nhân:</em> Thay thế các font chữ bị lỗi tiếng Việt thành font Montserrat đồng
+                        bộ. Tự biên soạn lại bố cục sắp xếp văn bản, căn chỉnh tỉ lệ và thiết kế hiệu ứng animation thủ
+                        công cho slide sinh động.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Content: Tool Analysis -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">📊</span> Đánh giá ưu nhược điểm của các công cụ AI</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Công cụ AI</th>
+                            <th>Ưu điểm nổi bật</th>
+                            <th>Hạn chế / Điểm yếu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Gemini (Google)</strong></td>
+                            <td>Tốc độ phản hồi cực nhanh, khả năng lập dàn ý và phân chia bố cục logic xuất sắc.</td>
+                            <td>Văn phong dễ rập khuôn, máy móc. Thỉnh thoảng xuất hiện lỗi ảo giác (hallucination).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Midjourney</strong></td>
+                            <td>Chất lượng hình ảnh nghệ thuật đỉnh cao, độ chi tiết tốt, hiệu ứng ánh sáng cinematic
+                                xuất sắc.</td>
+                            <td>Khó kiểm soát chính xác 100% các chi tiết nhỏ (ví dụ: vẽ đúng ký tự văn bản trên bảng
+                                đen).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Canva AI</strong></td>
+                            <td>Tự động hóa dựng khung slide nhanh chóng (tiết kiệm 40% thời gian thiết kế thô).</td>
+                            <td>Template sinh ra dễ trùng lặp, hỗ trợ tiếng Việt kém (hay lỗi font chữ).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Content: Human-AI Ratio -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">⚖️</span> Tỷ lệ đóng góp chất xám: Con người 65% - AI 35%</h2>
+                <p>
+                    Để đảm bảo tính trung thực học thuật và chất lượng chuyên môn sâu sắc của sản phẩm, tôi đã kiểm soát
+                    nghiêm ngặt tỷ lệ đóng góp:
+                </p>
+                <ul>
+                    <li><strong>Đầu ra của AI (35%):</strong> Đóng vai trò cung cấp sườn nội dung thô, hình nền mỹ thuật
+                        thô và các gợi ý bố cục dàn trang ban đầu.</li>
+                    <li><strong>Đóng góp sáng tạo cá nhân (65%):</strong> Tinh lọc và viết lại 100% văn bản theo văn
+                        phong cá nhân, chỉ đạo nghệ thuật và điều chỉnh prompt ảnh, chỉnh sửa hậu kỳ đồ họa, thiết kế
+                        lại typography, tạo chuyển động animation và thổi tư duy phản biện học thuật vào bài làm.</li>
+                </ul>
+                <div class="info-box purple">
+                    <p>
+                        <strong>✅ Liêm chính học thuật:</strong> Quá trình sử dụng AI tạo sinh được ghi nhận công khai
+                        minh bạch. Hình ảnh nền slide ghi rõ nguồn <em>"Created by Midjourney"</em>. Mọi thông tin khoa
+                        học do Gemini đề xuất đều được đối chiếu chéo với các bài báo nghiên cứu thực tế.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Content: Lessons Learned -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">💭</span> Bài học rút ra</h2>
+                <p>
+                    AI tạo sinh không thay thế năng lực sáng tạo của con người mà hoạt động như một đòn bẩy công nghệ
+                    cực mạnh. Điểm mấu chốt là người học cần biết định hướng nghệ thuật tốt, sở hữu tư duy phản biện cao
+                    để kiểm soát chất lượng đầu ra chặt chẽ. Việc làm chủ sự kết hợp này giúp tôi tạo ra những sản phẩm
+                    truyền thông số vừa mang tính thẩm mỹ cao, vừa sâu sắc về mặt học thuật.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Phan Văn Tuyến · Đại học Công nghệ – ĐHQGHN · Nhập môn Công nghệ số &amp; AI</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

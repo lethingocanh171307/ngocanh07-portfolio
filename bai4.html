@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bài tập 4: Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm - Portfolio Kỹ thuật số">
+    <title>Bài tập 4 | Tzz Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid-bg"></div>
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="index.html">⟨/⟩ Tzz Portfolio</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link" href="index.html">About Me</a></li>
+                <li><a class="nav-link" href="projects.html">My Projects</a></li>
+                <li><a class="nav-link" href="summary.html">Summary</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Dark / Light Mode"
+                title="Dark / Light Mode">🌙</button>
+        </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="page">
+        <div class="container">
+            <div class="detail-header">
+                <a class="detail-back" href="projects.html">← Quay lại My Projects</a>
+                <div class="detail-header-row">
+                    <div class="detail-header-left">
+                        <span class="project-badge bt4">Bài tập 4 · Mục 4.4</span>
+                        <h1 class="detail-title">Giao tiếp và hợp tác trong môi trường số</h1>
+                        <p style="color: var(--text-secondary); font-size: 1.05rem; margin-top: 8px;">
+                            Sử dụng bộ công cụ trực tuyến phối hợp dự án nhóm hiệu quả
+                        </p>
+                        <div class="detail-meta" style="margin-top: 16px;">
+                            <span class="detail-meta-item">📅 Nhiệm vụ 4</span>
+                            <span class="detail-meta-item">👥 Collaboration</span>
+                            <span class="detail-meta-item">⏱️ Bài tập 3 của mục 4.4</span>
+                        </div>
+                    </div>
+                    <div class="detail-header-right">
+                        <a href="25022006_tuan4.pdf" class="detail-pdf-btn" target="_blank">
+                            📄 Tải file PDF bài tập
+                        </a>
+                        <span class="detail-pdf-hint">Bài 4 </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objective -->
+            <div class="objective-card animate-on-scroll">
+                <h3>🎯 Mục tiêu bài tập</h3>
+                <p>
+                    Thiết lập, tối ưu hóa và vận hành trơn chu 4 nền tảng số hỗ trợ làm việc nhóm (Trello, Google Docs,
+                    Google Drive, Discord). Thể hiện năng lực tổ chức tài nguyên khoa học, quản lý tác vụ cá nhân và
+                    giải quyết các thách thức thực tế phát sinh khi cộng tác trực tuyến.
+                </p>
+            </div>
+
+            <!-- Content: Tools Summary -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">🛠️</span> Phân bổ công cụ và Mục đích sử dụng</h2>
+                <p>
+                    Chúng tôi đã thiết lập quy trình làm việc song song để tối ưu hóa việc phân chia và trao đổi thông
+                    tin:
+                </p>
+                <div class="about-grid" style="margin-top: 20px;">
+                    <div class="card" style="padding: 20px; border-top: 3px solid var(--accent-cyan);">
+                        <div class="about-card-icon cyan">📋</div>
+                        <h3 style="font-size: 1.05rem; margin-top: 10px;">Trello (Kanban Board)</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">
+                            Tổ chức quy trình Kanban 3 cột: To Do, Đang thực hiện, Hoàn thành. Sử dụng nhãn màu sắc để
+                            phân cấp độ ưu tiên (Đỏ: Khẩn, Cam: Trung bình, Xanh: Thấp).
+                        </p>
+                    </div>
+                    <div class="card" style="padding: 20px; border-top: 3px solid var(--accent-purple);">
+                        <div class="about-card-icon purple">💬</div>
+                        <h3 style="font-size: 1.05rem; margin-top: 10px;">Discord Server</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">
+                            Kênh họp thoại định kỳ và 4 kênh chat chuyên môn riêng biệt giúp giảm nhiễu loạn thông tin.
+                            Tích hợp bot tự động cập nhật log tiến độ của nhóm.
+                        </p>
+                    </div>
+                    <div class="card" style="padding: 20px; border-top: 3px solid var(--accent-emerald);">
+                        <div class="about-card-icon emerald">📝</div>
+                        <h3 style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">Google Workspace
+                        </h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 8px;">
+                            Google Docs phục vụ việc viết báo cáo nhóm đồng thời (sử dụng comment và edit lịch sử).
+                            Google Drive lưu trữ hệ thống tài liệu theo cấu trúc phân cấp.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content: Task List Table -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">📋</span> Quản lý tác vụ cá nhân trên Trello</h2>
+                <p>
+                    Chi tiết 6 nhiệm vụ cá nhân được giao và quản lý chặt chẽ với deadline cụ thể:
+                </p>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên nhiệm vụ trên Trello</th>
+                            <th>Hạn hoàn thành (Deadline)</th>
+                            <th>Trạng thái thực tế</th>
+                            <th>Mức độ ưu tiên</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Lập kế hoạch nhóm dự án</td>
+                            <td>01/06/2026</td>
+                            <td><span style="color: var(--accent-emerald); font-weight: 600;">✅ Hoàn thành</span></td>
+                            <td><span style="color: #ef4444; font-weight: 600;">🔴 Cao</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Thiết lập workspace Trello chung</td>
+                            <td>01/06/2026</td>
+                            <td><span style="color: var(--accent-emerald); font-weight: 600;">✅ Hoàn thành</span></td>
+                            <td><span style="color: #ef4444; font-weight: 600;">🔴 Cao</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Phân chia nhiệm vụ các thành viên</td>
+                            <td>01/06/2026</td>
+                            <td><span style="color: var(--accent-emerald); font-weight: 600;">✅ Hoàn thành</span></td>
+                            <td><span style="color: #ef4444; font-weight: 600;">🔴 Cao</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Phân tích ứng dụng ChatGPT (bài làm riêng)</td>
+                            <td>06/06/2026</td>
+                            <td><span style="color: var(--accent-cyan); font-weight: 600;">⚡ Tiến độ 70%</span></td>
+                            <td><span style="color: #ef4444; font-weight: 600;">🔴 Cao</span></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Soạn thảo nội dung báo cáo trên Google Docs</td>
+                            <td>06/06/2026</td>
+                            <td><span style="color: #f59e0b; font-weight: 600;">⏳ Đang thực hiện</span></td>
+                            <td><span style="color: #fb923c; font-weight: 600;">🟡 Trung bình</span></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Viết phần Giới thiệu cho báo cáo tổng kết</td>
+                            <td>07/06/2026</td>
+                            <td><span style="color: var(--text-secondary);">💤 Đang chờ (Pending)</span></td>
+                            <td><span style="color: #fb923c; font-weight: 600;">🟡 Trung bình</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Content: Drive Permissions Table -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">📁</span> Cấu trúc lưu trữ &amp; Phân quyền Google Drive</h2>
+                <p>
+                    Quy hoạch thư mục 2 cấp và thiết lập phân quyền truy cập hợp lý nhằm bảo vệ dữ liệu và đảm bảo tính
+                    minh bạch:
+                </p>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Thư mục / Tệp tin chính</th>
+                            <th>Bản thân (Tuyển)</th>
+                            <th>Thành viên nhóm</th>
+                            <th>Giảng viên</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>📂 01_TaiLieuThamKhao</td>
+                            <td>Chỉnh sửa (Edit)</td>
+                            <td>Xem (View)</td>
+                            <td>Xem (View)</td>
+                        </tr>
+                        <tr>
+                            <td>📂 02_BaoCaoNhom</td>
+                            <td>Chỉnh sửa (Edit)</td>
+                            <td>Chỉnh sửa (Edit)</td>
+                            <td>Xem (View)</td>
+                        </tr>
+                        <tr>
+                            <td>📂 03_SlideThuyetTrinh</td>
+                            <td>Chỉnh sửa (Edit)</td>
+                            <td>Xem (View)</td>
+                            <td>Xem (View)</td>
+                        </tr>
+                        <tr>
+                            <td>📂 04_MinhChung</td>
+                            <td>Chỉnh sửa (Edit)</td>
+                            <td>Xem (View)</td>
+                            <td>Xem (View)</td>
+                        </tr>
+                        <tr>
+                            <td>📄 BaoCaoCaNhan_tuyen.docx</td>
+                            <td>Chỉnh sửa (Edit)</td>
+                            <td>Không quyền (None)</td>
+                            <td>Xem (View)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="info-box purple" style="margin-top: 16px;">
+                    <p>
+                        <strong>📌 Thống kê tài nguyên:</strong> 100% tệp tin (13/13 tệp) tuân thủ nhất quán quy tắc đặt
+                        tên chuẩn: <code>[STT]_[mô tả]_[TenNguoiTao/Phienban].[ext]</code>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Content: Challenges & Solutions -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">⚖️</span> 3 Thách thức lớn &amp; Giải pháp thực tế</h2>
+
+                <div class="card" style="margin-bottom: 16px; padding: 20px;">
+                    <h3 style="margin-top: 0; font-size: 1rem; color: #f43f5e;">⚡ Thách thức 1: Xung đột ghi đè văn bản
+                        trên Docs</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                        <strong>Sự cố:</strong> Lúc 21h00 ngày 02/06, khi 3 thành viên cùng chỉnh sửa một đoạn văn bản
+                        chung trên Google Docs, hệ thống bị lag và xuất hiện lỗi ghi đè gây mất mát một số nội dung.
+                    </p>
+                    <p style="font-size: 0.9rem; margin-top: 8px;">
+                        <strong>Giải pháp:</strong> Nhóm đã thống nhất phân chia từng section cụ thể cho mỗi cá nhân phụ
+                        trách. Khi cần sửa chéo phần của nhau, bắt buộc chuyển sang chế độ <em>Suggesting (Đóng góp ý
+                            kiến)</em> thay vì sửa trực tiếp, đồng thời để lại comment tag tên người phụ trách chính để
+                        duyệt.
+                    </p>
+                </div>
+
+                <div class="card" style="margin-bottom: 16px; padding: 20px;">
+                    <h3 style="margin-top: 0; font-size: 1rem; color: #fb923c;">⚡ Thách thức 2: Quá tải thông báo
+                        (Notification Overload)</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                        <strong>Sự cố:</strong> Trong khung giờ học chính (08:00 - 17:00), Discord liên tục gửi hàng
+                        loạt thông báo thảo luận ngoài lề từ các thành viên khác, gây mất tập trung cao độ khi đang code
+                        bài tập cá nhân.
+                    </p>
+                    <p style="font-size: 0.9rem; margin-top: 8px;">
+                        <strong>Giải pháp:</strong> Kích hoạt chế độ <em>Do Not Disturb (Không làm phiền)</em> trong giờ
+                        học, tắt hết thông báo từ các kênh chat thường, chỉ giữ lại thông báo cho kênh tag khẩn cấp
+                        <code>#nhiệm-vụ</code>. Nhóm thống nhất quy tắc phản hồi tin nhắn trong vòng tối đa 2 giờ, không
+                        spam tin nhắn liên tục ngoài giờ làm việc hành chính.
+                    </p>
+                </div>
+
+                <div class="card" style="margin-bottom: 16px; padding: 20px;">
+                    <h3 style="margin-top: 0; font-size: 1rem; color: #38bdf8;">⚡ Thách thức 3: Rối loạn phiên bản tệp
+                        tin lưu trữ</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                        <strong>Sự cố:</strong> Sau vài ngày làm việc, trên Google Drive xuất hiện hàng loạt tệp tin như
+                        <code>BaoCao_v1</code>, <code>BaoCao_v2</code>, <code>BaoCao_final</code>,
+                        <code>BaoCao_final_sửa</code> gây nhầm lẫn nghiêm trọng về bản chính thức để nộp bài.
+                    </p>
+                    <p style="font-size: 0.9rem; margin-top: 8px;">
+                        <strong>Giải pháp:</strong> Áp dụng cơ chế kiểm soát phiên bản (Semantic Versioning) đơn giản.
+                        Duy trì đúng 1 tệp soạn thảo trực tiếp trên Google Docs (tận dụng tính năng Version History tích
+                        hợp sẵn để phục hồi khi cần). Chỉ khi xuất bản nộp bài mới chuyển thành định dạng PDF tĩnh và
+                        đặt tên theo định dạng chuẩn ngày tháng: <code>BaoCao_20260605.pdf</code>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Content: Lessons Learned -->
+            <div class="content-block animate-on-scroll">
+                <h2><span class="block-icon">💭</span> Bài học rút ra</h2>
+                <p>
+                    Kỹ năng cộng tác trực tuyến không đơn thuần là việc cài đặt các phần mềm, mà là xây dựng sự thống
+                    nhất về nguyên tắc làm việc chung (quy tắc đặt tên, cam kết phản hồi, phân quyền dữ liệu). Việc vận
+                    hành hiệu quả các công cụ này giúp nhóm của tôi tăng 50% hiệu suất, giảm thiểu tối đa các xung đột
+                    thông tin và rèn luyện kỹ năng làm việc số thực tế - điều cực kỳ quan trọng cho một kỹ sư công nghệ
+                    trong tương lai.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Phan Văn Tuyến · Đại học Công nghệ – ĐHQGHN · Nhập môn Công nghệ số &amp; AI</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>iết báo cáo đều phải được tối thiểu 1 thành viên khác duyệt (peer-review) trước khi kéo sang cột Done.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 Phan Văn Tuyến · Đại học Công nghệ – ĐHQGHN · Nhập môn Công nghệ số &amp; AI</p>
+        <p style="margin-top: 6px;">Made with <span class="heart">♥</span> using HTML, CSS &amp; JavaScript</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
