@@ -2,7 +2,7 @@
 
 ## Giới thiệu
 
-`Tzz Portfolio` là website hồ sơ kỹ thuật số được xây dựng dành cho môn học **Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo** tại **Đại học Kinh tế - ĐHQGHN**.
+`Ngoc Anh Portfolio` là website hồ sơ kỹ thuật số được xây dựng dành cho môn học **Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo** tại **Đại học Kinh tế - ĐHQGHN**.
 
 Portfolio này trình bày:
 - Giới thiệu cá nhân và định hướng nghề nghiệp
